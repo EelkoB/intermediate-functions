@@ -127,8 +127,8 @@ for (let i = 0; i < grades.length; i++) {
     if (grades[i] > value) {
         value = grades[i];
     }
-    console.log(value);
 }
+console.log(value);
 // ---- Verwachte uitkomst: 9
 
 
@@ -141,3 +141,18 @@ for (let i = 0; i < grades.length; i++) {
 // highestGrade(grades) geeft 9
 // highestGrade([6, 4, 5]) geeft 6
 // highestGrade([8, 9, 4, 6, 10]) geeft 10
+
+function highestGrade(grades) {
+    let value = grades[0];
+
+    for (let i = 0; i < grades.length; i++) {
+        if (grades[i] > value) {
+            value = grades[i];
+        }
+    }
+    return(value);
+}
+
+console.log(highestGrade(grades));
+console.log(highestGrade([6, 4, 5]));
+console.log(highestGrade([8, 9, 4, 6, 10]));
